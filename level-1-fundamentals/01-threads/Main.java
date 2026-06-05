@@ -28,13 +28,13 @@ public class Main{
     //creating multiple threads to access the counter
     private static void createMultipleThreads(SharedCounter obj){
         RunnableThread t1 = new RunnableThread(()->{
-            for(int i = 0; i < 100000; i++){
+            for(int i = 0; i < 1000; i++){
                 obj.increment();
             }
         });
 
         RunnableThread t2 = new RunnableThread(()->{
-            for(int i =0; i < 100000000; i++){
+            for(int i =0; i < 1000; i++){
                 obj.increment();
             }
         });
