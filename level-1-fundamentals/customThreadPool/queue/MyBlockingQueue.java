@@ -35,8 +35,8 @@ public class MyBlockingQueue<T> {
             wait();
         }
         T item = (T) items[head];
-        head = (head + 1) % capacity ;
         items[head] = null;      //Help GC
+        head = (head + 1) % capacity ;
         size--;
         notifyAll();
         return item;
