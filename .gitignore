@@ -1,9 +1,12 @@
-# IntelliJ IDEA
+# IntelliJ
 .idea/
 *.iml
 
-# Build output
+# IntelliJ build output
+out/
+
+# Maven
 target/
 
-# Compiled Java files
+# Java
 *.class
